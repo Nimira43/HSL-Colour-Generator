@@ -45,7 +45,8 @@ h1 {
     margin: 20px auto;
     border-radius: 8px;
     border: 1px dotted orangered;
-    transition: background-color 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    background-color: beige;
+    transition: background-color 0.3s ease-in;
     box-shadow: 0 0 20px rgb(66, 43, 0);
 }
 
@@ -64,7 +65,8 @@ h1 {
 }
 
 label,
-span {
+span,
+p {
     padding-top: 18px;
     width: 50px;
     font-weight: bold;
@@ -77,7 +79,7 @@ span {
 
 input {
     width: 60%;
-    margin-right: 10px;
+    margin: 10px;
     margin-top: 20px;
     
 }
