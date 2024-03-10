@@ -10,10 +10,10 @@
 <body>
     <div class="container">
         <h1>HSL Colour Generator</h1>
-        <div class="colour-display"></div>
+        <div id="colour-display" class="colour-display"></div>
         <div class="controls">
             <div class="control">
-                <label for="hue">Hue:</label>
+                <label for="hue">Hue</label>
                 <div class="slider-container">
                     <input 
                         type="range" 
@@ -21,11 +21,11 @@
                         min="0" 
                         max="360" 
                         value="100">
-                    <span id="hueValue">100</span>
+                    <span id="hue-value">100</span>
                 </div>
             </div>
             <div class="control">
-                <label for="saturation">Saturation:</label>
+                <label for="saturation">Saturation</label>
                 <div class="slider-container">
                     <input 
                         type="range" 
@@ -33,11 +33,11 @@
                         min="0" 
                         max="100" 
                         value="50">
-                    <span id="saturationValue">50</span>
+                    <span id="saturation-value">50</span>
                 </div>
             </div>
             <div class="control">
-                <label for="lightness">Lightness:</label>
+                <label for="lightness">Lightness</label>
                 <div class="slider-container">
                     <input 
                         type="range" 
@@ -45,11 +45,11 @@
                         min="0" 
                         max="100" 
                         value="45">
-                    <span id="lightnessValue">45</span>
+                    <span id="lightness-value">45</span>
                 </div>
             </div>
         </div>
-        <button id="copy-button">Select Colour</button>
+        <button  class="btn" id="copy-btn">Select Colour</button>
     </div>
     
     <script src="script.js"></script>

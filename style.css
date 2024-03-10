@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    outline: none;
 }
 
 body {
@@ -16,10 +13,106 @@ body {
     background: linear-gradient(
         rgba(0, 0, 0, 0.9),
         rgba(0, 0, 0, 0.8)),
-        url('./') no-repeat center;
+        url('./bg.jpg') no-repeat center;
     background-size: cover;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-} */
+}
+
+.container {
+    background-color: rgba(33, 17, 1, 0.197);
+    color: orange;
+    border: 1px dotted orangered;
+    box-shadow: inset 0 0 20px rgb(66, 43, 0);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 30px;
+    width: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 0 black,
+                 2px 2px 0 orangered;
+    letter-spacing: 1px;
+}
+
+.colour-display {
+    width: 400px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 1px dotted orangered;
+    transition: background-color 0.3s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    box-shadow: 0 0 20px rgb(66, 43, 0);
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 80px;
+    width: 400px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: 40px;
+}
+
+label,
+span {
+    padding-top: 18px;
+    width: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    text-shadow: 0.5px 0.5px 0 black,
+            1.5px 1.5px 0 orangered;
+    letter-spacing: 0.5px;
+}
+
+input {
+    width: 60%;
+    margin-right: 10px;
+    margin-top: 20px;
+    
+}
+
+input[type="range"] {
+    accent-color: orange;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background-color: black;
+    border-radius: 15px;
+    border: 1px dotted orangered;
+}
+
+.btn {
+    background-color: transparent;
+    border: 1px dotted orangered;
+    font-family: inherit;
+    font-size: 32px;
+    color: orange;
+    text-shadow: 1px 1px 0 black,
+                 2px 2px 0 orangered;
+    letter-spacing: 1px;
+    box-shadow: inset 0 0 20px rgb(66, 43, 0);
+    border-radius: 8px;
+    padding: 10px 60px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    border: 1px solid orangered;
+}
+
+.btn:active {
+    transform: scale(0.99);
+}
